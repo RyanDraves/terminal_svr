@@ -81,7 +81,7 @@ if __name__ == '__main__':
     for algo_name in leaderboard_ids:
 
         algo_id = leaderboard_ids[algo_name]
-        header = "### " + algo_name + " by "
+        header = "### [" + algo_name + "](https://bcverdict.github.io/?id=" + (str)(algo_id) + ") by "
         matches = svr.get_algos_matches(algo_id)
         total_matches += len(matches)
         # First k indices to choose from, pick n
